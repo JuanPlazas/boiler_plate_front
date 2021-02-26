@@ -5,7 +5,7 @@ import routes from '../../Routes';
 import Components from './layoutStyledComponents';
 import { LayoutProps } from './LayoutSecene';
 
-import SnackbarComponent from '../../utils/materialUi/Snackbar';
+import SnackbarComponent from '../../utils/MaterialUi/Snackbar/index';
 
 class Layout extends React.Component<LayoutProps> {
   constructor(props: any) {

@@ -32,7 +32,9 @@ class Login extends React.Component<LoginProps, IState> {
 
   handlerLogin() {
     const { user, password } = this.state;
-    this.props.initLogin(user, password);
+    this.setState({ redirect: '/home' }, () => {
+      this.props.initLogin(user, password)
+    });
   }
 
   render() {
@@ -65,7 +67,7 @@ class Login extends React.Component<LoginProps, IState> {
           <Component.Button onClick={() => this.handlerData('/createUser', 'redirect')}>
             REGISTER
           </Component.Button>
-          <Component.Button login onClick={() => this.handlerData('/home', 'redirect')}>
+          <Component.Button login onClick={this.handlerLogin}>
             LOGIN
           </Component.Button>
         </Component.ContainerData>
