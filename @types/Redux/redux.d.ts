@@ -2,17 +2,17 @@
 import { ThunkDispatch } from 'redux-thunk';
 import { AppActionTypes } from '../../src/Reducers/App/AppActions';
 import { LoginActionTypes } from '../../src/Reducers/Login/LoginActions';
+import { NotesActionTypes } from '../../src/Reducers/Notes/NotesActions';
 
 declare global {
   interface IAction {
-    type: AppActionTypes | LoginActionTypes;
+    type: AppActionTypes | LoginActionTypes | NotesActionTypes;
     value?: any;
     payload?: any;
   }
 
   interface IRootState {
     app: IAppReducerType;
-    login: ILoginReducerType;
   }
   /**
    * Manual Thunk Result to limit properties inside dispatch params,

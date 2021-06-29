@@ -5,9 +5,9 @@ import { bindActionCreators } from 'redux';
 import Login from '.';
 
 // Actions
-import {
-  initLogin,
-} from '../../Reducers/Login/LoginActions';
+// import {
+//   initLogin,
+// } from '../../Reducers/Login/LoginActions';
 
 const mapStateToProps = (state: IRootState) => {
   return {
@@ -16,7 +16,7 @@ const mapStateToProps = (state: IRootState) => {
 };
 
 const mapDispatchToProps = (dispatch: ThunkDispatchType) => bindActionCreators({
-  initLogin,
+  // initLogin,
 }, dispatch);
 
 
