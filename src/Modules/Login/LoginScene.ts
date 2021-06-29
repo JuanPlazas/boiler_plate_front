@@ -11,7 +11,7 @@ import Login from '.';
 
 const mapStateToProps = (state: IRootState) => {
   return {
-    login: state.login,
+    // login: state.login,
   };
 };
 
